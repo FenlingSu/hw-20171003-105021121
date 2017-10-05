@@ -65,7 +65,11 @@ public class MainFrame extends JFrame {
 
                 for (int i = 0; i < len; i++) {
                     data[i] = (byte)(data[i] ^ key[bin]);    //網路查詢相關作法
+                    if(++bin == key.length){
+                        bin = 0;
+                    }
                 }
+
                 jtaR.setText(new String(data));
             }
         });
@@ -80,7 +84,11 @@ public class MainFrame extends JFrame {
 
                 for (int i = 0 ; i<len ; i++) {
                     data[i] = (byte)(data[i] ^ key[bin]);
+                    if(++bin == key.length){
+                        bin = 0;
+                    }
                 }
+
                 jtaR.setText(new String(data));
             }
         });
