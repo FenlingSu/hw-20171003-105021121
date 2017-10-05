@@ -74,9 +74,9 @@ public class MainFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 byte data[] = jtaR.getText().getBytes();
+                byte key[] = jtf.getText().getBytes();
                 int len = data.length;
                 int bin = 0;
-                byte key[] = jtf.getText().getBytes();
 
                 for (int i = 0 ; i<len ; i++) {
                     data[i] = (byte)(data[i] ^ key[bin]);
