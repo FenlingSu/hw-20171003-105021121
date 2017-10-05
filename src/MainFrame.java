@@ -58,7 +58,7 @@ public class MainFrame extends JFrame {
         jbten.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                byte data[] = jtaL.getText().getBytes();
+                byte data[] = jtaL.getText().getBytes();     //網路查詢相關作法
                 byte key[] = jtf.getText().getBytes();
                 int len = data.length;
                 int bin = 0;
