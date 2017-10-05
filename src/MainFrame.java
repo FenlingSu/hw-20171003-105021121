@@ -64,7 +64,7 @@ public class MainFrame extends JFrame {
                 int bin = 0;
 
                 for (int i = 0; i < len; i++) {
-                    data[i] = (byte)(data[i] ^ key[bin]);
+                    data[i] = (byte)(data[i] ^ key[bin]);    //網路查詢相關作法
                 }
                 jtaR.setText(new String(data));
             }
